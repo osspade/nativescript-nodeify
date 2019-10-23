@@ -1,7 +1,6 @@
 module.exports = function ($logger, $projectData, changesInfo) {
-  if (!changesInfo.modulesChanged) {
-    return;
-  }
+if (blacklist.indexOf(file.name) > -1) { return; }
+
 
   var fs = require('fs'),
       path = require('path'),
